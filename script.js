@@ -69,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealElements.forEach((element) => revealObserver.observe(element));
 
-  // Force trigger immediate visibility for hero segment parameters
   setTimeout(() => {
     const heroElements = document.querySelectorAll("#hero .reveal");
     heroElements.forEach((el) => el.classList.add("active"));
