@@ -2985,3 +2985,172 @@ body {
     font-size: 0.95rem;
   }
 }
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+  padding: 120px 0 80px;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.contact-headline {
+  font-family: "Syne", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+  color: #f0f0f0;
+}
+
+.contact-sub {
+  color: #7a7a7a;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  margin-bottom: 32px;
+  max-width: 420px;
+}
+
+.contact-email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 26px;
+  background: var(--accent-teal);
+  color: #000;
+  border-radius: 14px;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 700;
+  transition: 0.25s ease;
+  letter-spacing: 0.2px;
+}
+
+.contact-email-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.contact-email-btn:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(57, 229, 182, 0.25);
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-card:hover {
+  transform: translateX(6px);
+  border-color: rgba(57, 229, 182, 0.2);
+  background: rgba(57, 229, 182, 0.03);
+}
+
+.social-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.social-icon-wrap svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+
+.social-name {
+  font-family: "Syne", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+.social-handle {
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.social-arrow {
+  color: #333;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.social-card:hover .social-arrow {
+  color: #39e5b6;
+  transform: translate(2px, -2px);
+}
+
+/* FOOTER */
+.contact-footer {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-footer-line {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.contact-footer-text {
+  color: #333;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+    padding: 80px 0 60px;
+  }
+  .contact-email-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .social-card {
+    padding: 14px 16px;
+  }
+}
