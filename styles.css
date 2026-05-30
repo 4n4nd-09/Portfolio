@@ -991,27 +991,33 @@ body {
   .navbar {
     height: auto;
     padding: 16px 18px;
-    flex-wrap: wrap;
   }
 
   .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4px;
-    width: 100%;
-  }
-
-  .mobile-toggle {
     display: none;
   }
 
-  .nav-link {
-    font-size: 0.75rem;
-    padding: 6px 10px;
+  .mobile-toggle {
+    display: flex;
   }
-}
 
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 18px;
+    width: auto;
+    min-width: 180px;
+    max-width: 240px;
+    background: rgba(5, 5, 5, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 12px 14px;
+    border-radius: 16px;
+    gap: 10px;
+    z-index: 9999;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  }
   /* LOGO */
 
   .logo-box {
